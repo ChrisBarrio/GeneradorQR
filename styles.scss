@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+*{
+	font-family: 'Rubik Glitch', cursive;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	outline:none;
+	text-decoration:none;
+	text-transform:capitalize;
+	transition: all .2s linear;
+}
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+    --white:#fff;
+
+    --FontSize-s: 1rem;
+    --FontSize-m: 1.5rem;
+    --FontSize-l: 2rem;
+    --FontSize-xl: 3rem;
+}
+
+
+html {
+	font-size:62.5%;
+	overflow-x:hidden;
+}
+body{
+    height: 100vh;
+}
+.container{
+    background:#E4E9BE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    & h1{
+        padding: 6rem 0;
+        font-size: var(--FontSize-xl);
+        background-color: #A2B38B;
+        background: linear-gradient(#A2B38B 70%,#E4E9BE );
+        width: 100%;
+    }
+    & form{
+        width: 80%;
+        height: 100vh;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+        & input{
+            width: 70%;
+            padding: .7rem;
+            margin-bottom: 2rem;
+            border-radius: .5rem;
+            border: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: none;
+            &:focus{
+                border: 2px solid green;
+            }
+        }
+        & .btn{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+            padding: .5rem;
+            letter-spacing: .3rem;
+            background-color: rgb(211, 218, 211);
+            color: var(--black);
+            border-radius: .3rem;
+        }
+        & .containerQR{
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+            border: 3px solid var(--black);
+            border-radius: .5rem;
+        }
+    }
+}
